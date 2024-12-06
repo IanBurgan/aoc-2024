@@ -1,2 +1,5 @@
 # ignore puzzle inputs
 *.in
+
+# ignore directory of stats files
+stats/
