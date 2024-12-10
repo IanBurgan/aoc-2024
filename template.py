@@ -9,7 +9,7 @@ myfile.close()
 grid = defaultdict(str)
 for y in range(len(lines)):
     for x in range(len(lines[y])):
-        grid[(x,y)] = lines[y][x]
+        grid[(x, y)] = lines[y][x]
 
 part_one = 0
 part_two = 0
