@@ -42,11 +42,8 @@ def run(a_start, b_start, c_start):
             b = val % 8
             ip += 2
         elif op == 3:
-            if a == 0:
-                ip += 2
-            else:
-                val = program[ip + 1]
-                ip = val
+            val = program[ip + 1]
+            ip = ip + 2 if a == 0 else val
         elif op == 4:
             b = b ^ c
             ip += 2

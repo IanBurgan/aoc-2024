@@ -26,7 +26,6 @@ scores = defaultdict(lambda: float("inf"))
 prev = defaultdict(set)
 # score, pos, direction
 q = [(0, start, 0)]
-heapq.heapify(q)
 while q:
     curr_score, curr_pos, curr_dir = heapq.heappop(q)
     if grid[curr_pos] == "E":
